@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEP Project – LIMO Arena Design</title>
+  <link rel="stylesheet" href="../assets/css/styles3.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    @media print {
+      video, .noprint, iframe {
+        display: none !important;
+      }
+      body {
+        color: #000;
+        background: #fff;
+      }
+      section {
+        padding: 20px;
+      }
+    }
+    .button-link {
+      display: inline-block;
+      padding: 10px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .button-link img {
+      height: 32px;
+      width: 32px;
+    }
+    .header-top {
+      background: #d5d5df;
+      padding: 20px 0;
+    }
+    .header-top h1 a {
+      color: #121212;
+      font-size: 28px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 30px;
+    }
+    .navbar ul li a {
+      color: #2c2c2c;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .navbar ul li a:hover, .navbar ul li a.active {
+      color: #a65c45;
+    }
+    .pdf-button {
+      display: inline-block;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+    }
+    .pdf-button img {
+      height: 40px;
+      width: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1><a href="../index.html">Ziyu</a></h1>
+      <nav class="navbar">
+        <ul>
+          <li><a href="../index.html#hero">Home</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#experience">Experience</a></li>
+          <li><a href="../index.html#portfolio">Projects</a></li>
+          <li><a href="../index.html#skills">Education</a></li>
+          <li><a href="../index.html#links">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container" style="padding: 60px 60px 60px; max-width: 900px; margin: auto;">
+    <h1>System Engineering Project: LIMO Arena Design & Navigation</h1>
+<br />
+    <a class="button-link" href="https://github.com/Jin-Ziyu/Systems-Engineering-Project-1-Group-6" target="_blank">
+      <img src="../assets/img/github-icon.png" alt="GitHub" />
+    </a>
+    <h2>Project Overview</h2>
+    <p>
+      This project presents a full-stack implementation of a system engineering challenge:
+      designing a realistic, theme-based arena where an AgileX LIMO robot can autonomously
+      navigate, map, and avoid obstacles using ROS 1 and LiDAR-based SLAM. The arena was inspired
+      by Canopy Park at Jewel Changi Airport.
+    </p>
+
+    <h2>Objectives</h2>
+    <ul>
+      <li>Apply the SEBoK systems engineering approach</li>
+      <li>Design an arena that balances aesthetics, realism, and navigability</li>
+      <li>Implement autonomous navigation using LiDAR SLAM and the ROS Navigation Stack</li>
+      <li>Conduct validation and verification with the LIMO robot</li>
+    </ul>
+
+    <h2 class="noprint">Demo Video</h2>
+    <p class="noprint">This demo captures the LIMO robot navigating the custom-designed SEP arena:</p>
+    <video controls class="noprint" style="width: 100%; border-radius: 10px; margin-bottom: 20px;">
+      <source src="../assets/videos/sep-demo.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <h2>Report Preview</h2>
+    <p>Below is a live preview of the full report. You can scroll through or download it.</p>
+    <iframe
+      src="../assets/docs/V2 Stacks and Toolchains Viva-Voce.pdf"
+      width="100%"
+      height="600px"
+      style="border: 1px solid #ccc; border-radius: 8px;">
+    </iframe>
+
+    <div style="margin: 20px 0;">
+      <a class="pdf-button" href="../assets/docs/V2 Stacks and Toolchains Viva-Voce.pdf" target="_blank">
+        <img src="../assets/img/pdf-icon.png" alt="PDF Icon" />
+      </a>
+    </div>
+
+    <h2>System Context</h2>
+    <p>
+      The robot system integrates software (ROS 1) and hardware (LIMO with LiDAR). The arena design
+      required careful planning around drive mode (Track Mode), turn radius, sensor range, and platform
+      size. Navigation stacks were tuned using RTABMap and DWAPlanner.
+    </p>
+
+    <h2>Technical Stack</h2>
+    <ul>
+      <li><strong>Hardware:</strong> AgileX LIMO Robot</li>
+      <li><strong>Sensor:</strong> LiDAR, IMU</li>
+      <li><strong>Software:</strong> ROS 1 Noetic, RViz, Gazebo, RTABMap</li>
+      <li><strong>Mapping:</strong> RTABMap for 3D SLAM</li>
+      <li><strong>Planners:</strong> Dijkstra (Global), DWAPlanner (Local)</li>
+    </ul>
+
+    <h2>Role & Contribution</h2>
+    <p>
+      As a Robotics Systems undergraduate, I led arena design and simulation validation,
+      implemented navigation behavior in ROS, and conducted system-level verification and
+      validation under competition criteria.
+    </p>
+
+    <h2>Verification & Validation</h2>
+    <ul>
+      <li><strong>Verification:</strong> Ensured robot could navigate from start to goal in a controlled environment without collision</li>
+      <li><strong>Validation:</strong> Confirmed robot behavior aligned with stakeholder expectations (e.g., team, course instructors)</li>
+    </ul>
+
+    <h2>Project Repository</h2>
+    <br />
+    <a class="button-link" href="https://github.com/Jin-Ziyu/Systems-Engineering-Project-1-Group-6" target="_blank">
+      <img src="../assets/img/github-icon.png" alt="GitHub" />
+    </a>
+
+
+    <p class="noprint" style="margin-top: 40px;"><a href="../index.html">&larr; Back to Portfolio</a></p>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
