@@ -4,7 +4,7 @@ Welcome to my personal portfolio website! This site showcases my projects, exper
 
 ## 🔗 Live Demo
 
-👉 [View Portfolio](https://jinziyu.github.io)
+👉 [View Portfolio](https://jin-ziyu.github.io)
 
 ## 📂 Project Structure
 
