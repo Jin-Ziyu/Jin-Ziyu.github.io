@@ -23,7 +23,7 @@
   --gray: #010e1b;
   --dark-green: #A45A3D;
   --navy-blue: #2E4052;
-  --yellow: #ffc107;
+  --yellow: #010e1b;
   --light-pink: #FFFFFF;
   --golden-yellow: #9e7f25;
   /* --dark-blue: #e7e9f0; */
@@ -57,7 +57,7 @@ body {
 
 @media (min-width: 1024px) {
   body::before {
-    background-attachment: #ffffff;
+    background-attachment: #010e1b;
   }
 }
 
@@ -92,12 +92,23 @@ h6 {
   overflow-y: auto;
 }
 
+#header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* 50% black */
+  z-index: -1;
+}
+
 #header * {
   transition: ease-in-out 0s;
 }
 
 #header h1 {
-  font-size: 40px;
+  font-size: 30px;
   margin-top: 0px;
   padding: 0;
   line-height: 1;
@@ -113,8 +124,8 @@ h6 {
 }
 
 #header h2 {
-  font-size: 50px;
-  margin-top: 20px;
+  font-size: 40px;
+  margin-top: 10px;
   color: var(--dark-green);
 }
 
@@ -152,16 +163,15 @@ h6 {
   background: var(--light-pink);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   #header h1 {
-    font-size: 36px;
+    font-size: 28px;
   }
   #header h2 {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 16px;
   }
   #header .social-links {
-    margin-top: 15px;
+    justify-content:center;
   }
   #header .container {
     display: flex;
@@ -175,7 +185,9 @@ h6 {
 --------------------------------------------------------------*/
 /* Desktop Navigation */
 .nav-menu {
-  margin-top: 35px;
+  margin-top: 10px;
+  color: var(--white);
+  visibility: visible;
 }
 
 .nav-menu ul {
@@ -183,18 +195,25 @@ h6 {
   margin: 0;
   padding: 0;
   list-style: none;
+  background-color: var(--white);
+  visibility: visible;
 }
 
 .nav-menu li + li {
-  margin-left: 30px;
+  background-color: var(--white);
+  visibility: visible;
+  margin-left: 20px;
 }
 
 .nav-menu a {
   display: block;
   position: relative;
   color: var(--cool-blue);
-  font-size: 19px;
+  font-size: 17px;
   font-family: 'Garamond', sans;
+  transition: all 0.3s ease-in-out 0s;
+  background-color: var(--white);
+  visibility: visible;
   font-weight: 400;
 }
 
@@ -1162,10 +1181,77 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Garamond', sans-serif;
-  color: #fff;
+  color: #010e1b;
   overflow-x: hidden;
   background-color: #ffffff; /* fallback */
 }
+/* Fixed-top header offset for banner */
+#banner {
+  height: 50vh;
+  padding-top: 50px; /* offset for fixed header */
+  position: relative;
+  background: url('../img/banner.jpg') center center / cover no-repeat;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+/* Dark overlay */
+#banner .banner-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 0;
+}
+
+/* Ensure text & image are above overlay */
+#banner h1,
+#banner h2,
+#banner img {
+  position: relative;
+  z-index: 1;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  #banner h1 {
+    font-size: 20px;
+  }
+
+  #banner h2 {
+    font-size: 18px;
+  }
+
+  #banner {
+    padding-top: 120px;
+  }
+}
+
+.logo {
+  font-size: 20px;
+  margin: 0;
+  padding: 1px 0;
+  line-height: 0;
+  background-color: var(--white);
+  visibility: visible;
+}
+
+.logo a {
+  color: #FFC3A0; /* adjust as needed */
+  text-decoration: visible;
+}
+
+.main-header {
+  padding: 0.1rem 1rem; /* reduce vertical padding */
+  background-color: var(--white);
+  visibility: visible;
+}
+
+.main-header .container {
+  height: 40px; /* control navbar height */
+}
+
+
 
 
 }
