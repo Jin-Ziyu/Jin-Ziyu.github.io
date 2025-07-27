@@ -202,14 +202,14 @@ h6 {
 .nav-menu li + li {
   background-color: var(--white);
   visibility: visible;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .nav-menu a {
   display: block;
   position: relative;
   color: var(--cool-blue);
-  font-size: 10px;
+  font-size: 8px;
   font-family: 'Garamond', sans;
   transition: all 0.3s ease-in-out 0s;
   background-color: var(--white);
