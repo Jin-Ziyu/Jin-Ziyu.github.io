@@ -209,7 +209,7 @@ h6 {
   display: block;
   position: relative;
   color: var(--cool-blue);
-  font-size: 10px;
+  font-size: 5px;
   font-family: 'Garamond', sans;
   transition: all 0.3s ease-in-out 0s;
   background-color: var(--white);
@@ -289,7 +289,6 @@ h6 {
 
 .mobile-nav a {
   display: block;
-  position: relative;
   color: var(--cool-blue);
   font-weight: 200;
   outline: none;
