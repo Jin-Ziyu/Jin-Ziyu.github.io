@@ -209,7 +209,7 @@ h6 {
   display: block;
   position: relative;
   color: var(--cool-blue);
-  font-size: 20px;
+  font-size: 10px;
   font-family: 'Garamond', sans;
   transition: all 0.3s ease-in-out 0s;
   background-color: var(--white);
@@ -247,8 +247,8 @@ h6 {
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
-  right: 5px;
-  top: 15px;
+  right: 0px;
+  top: 0px;
   z-index: 9998;
   border: 0;
   background: none;
@@ -266,7 +266,7 @@ h6 {
 
 .mobile-nav {
   position: fixed;
-  top: 15px;
+  top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
@@ -276,7 +276,7 @@ h6 {
   transition: ease-in-out 0s;
   opacity: 0;
   visibility: hidden;
-  border-radius: 10px;
+  border-radius: 0px;
   padding: 0;
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
