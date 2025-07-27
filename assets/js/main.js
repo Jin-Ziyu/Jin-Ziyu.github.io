@@ -91,7 +91,15 @@
     $('body').prepend(
       '<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>'
     );
+    
     $('body').append('<div class="mobile-nav-overly"></div>');
+    // Mobile nav toggle button
+$(document).on('click', '.mobile-nav-toggle', function (e) {
+  $('body').toggleClass('mobile-nav-active');
+  $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+  $('.mobile-nav-overly').fadeToggle();
+});
+
 
 $(document).on('click', '.nav-menu a, .mobile-nav a', function (e) {
   const hash = this.hash;
