@@ -209,7 +209,7 @@ h6 {
   display: block;
   position: relative;
   color: var(--cool-blue);
-  font-size: 5px;
+  font-size: 10px;
   font-family: 'Garamond', sans;
   transition: all 0.3s ease-in-out 0s;
   background-color: var(--white);
