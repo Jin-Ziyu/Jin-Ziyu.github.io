@@ -1,551 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Google Tag Manager -->
-    <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5BB8W2X');</script> -->
-    <!-- End Google Tag Manager -->
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jin Ziyu – Robotics Systems undergraduate at Singapore Institute of Technology. Portfolio showcasing robotics, automation, and engineering projects." />
+  <meta name="keywords" content="robotics, ROS, automation, Singapore Institute of Technology, Jin Ziyu" />
+  <title>Jin Ziyu — Robotics Systems</title>
 
-    <title>Personal Portfolio</title>
-    <meta content="" name="descriptison" />
-    <meta content="" name="keywords" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Bootstrap -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"
-    />
+<body>
 
-    <!-- Vendor CSS Files -->
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/owl.carousel/assets/owl.carousel.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+<!-- ======= Navbar ======= -->
+<nav class="site-nav" id="siteNav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="#home">JZ</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home"       class="nav-link active">Home</a></li>
+      <li><a href="#about"      class="nav-link">About</a></li>
+      <li><a href="#skills"     class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects"   class="nav-link">Projects</a></li>
+      <li><a href="#education"  class="nav-link">Education</a></li>
+      <li><a href="#resume"     class="nav-link">Resume</a></li>
+      <li><a href="#contact"    class="nav-link">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
 
-    <!-- Template Main CSS File -->
-    <!-- <link href="assets/css/style.css" rel="stylesheet" /> -->
-    <!-- <link rel="stylesheet" href="assets/css/styles2.css" /> -->
-    <link rel="stylesheet" href="assets/css/styles3.css" />
+<!-- ======= Hero ======= -->
+<section id="home" class="hero">
+  <canvas id="heroCanvas" aria-hidden="true"></canvas>
+  <div class="hero-content">
+    <p class="hero-tag reveal">Robotics Systems · SIT Singapore</p>
+    <h1 class="hero-name reveal">Jin Ziyu</h1>
+    <p class="hero-subtitle reveal">Building intelligent systems at the intersection of hardware, software, and automation.</p>
+    <div class="hero-links reveal">
+      <a href="https://www.linkedin.com/in/jin-ziyu/" target="_blank" class="btn-outline"><i class="bi bi-linkedin"></i> LinkedIn</a>
+      <a href="https://github.com/Jin-Ziyu" target="_blank" class="btn-outline"><i class="bi bi-github"></i> GitHub</a>
+      <a href="#projects" class="btn-solid">View Projects <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </div>
+  <div class="hero-portrait reveal">
+    <img src="assets/img/profile.jpeg" alt="Jin Ziyu" />
+  </div>
+  <a href="#about" class="hero-scroll" aria-label="Scroll down"><i class="bi bi-chevron-double-down"></i></a>
+</section>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169007209-3"></script> -->
-    <!-- <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<!-- ======= About ======= -->
+<section id="about">
+  <div class="container">
+    <p class="section-label reveal">About Me</p>
+    <div class="about-grid">
+      <div class="about-photo reveal">
+        <img src="assets/img/profile.jpeg" alt="Jin Ziyu" />
+      </div>
+      <div class="about-text reveal">
+        <h2>Robotics engineer with hands-on experience in QA and supply chain operations.</h2>
+        <p>I'm Jin Ziyu, a Robotics Systems undergraduate at the Singapore Institute of Technology with a strong foundation in electronics, automation, and robotics. My journey combines academic learning with practical industry experience in quality assurance and supply chain operations.</p>
+        <p>During my time as an Assistant QA Engineer at Kinergy Corporation, I conducted equipment inspections using UV light and feeler gauges, while collaborating with cross-functional teams to enhance product quality. My internship at Wizlogix gave me insight into supply chain processes, inventory control, and procurement systems like SAP.</p>
+        <p>I'm passionate about solving technical challenges, optimising systems, and applying robotics solutions in real-world environments — constantly seeking opportunities to innovate in robotics, automation, and quality engineering.</p>
+        <div class="about-tags">
+          <span>ROS 1 &amp; ROS 2</span>
+          <span>C / C++</span>
+          <span>Computer Vision</span>
+          <span>Smart Manufacturing</span>
+          <span>Control Systems</span>
+          <span>Machine Learning</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    gtag('config', 'UA-169007209-3');
-  </script> -->
-<style>
-      .home-profile-pic-small {
-        max-width: 130px;
-        height: auto;
-        border-radius: 50%;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      }
-      .home-section .container {
-        padding: 1rem;
-      }
-       .nav-menu ul li.active > a {
-        color: #010e1b;
-        font-weight: bold;
-      }
-    </style>
+<!-- ======= Skills ======= -->
+<section id="skills" class="alt-bg">
+  <div class="container">
+    <p class="section-label reveal">Technical Skills</p>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <i class="bi bi-cpu"></i>
+        <h3>Robotics &amp; ROS</h3>
+        <p>ROS 1 &amp; ROS 2, node architecture, topic/service communication, SLAM, robot system integration</p>
+      </div>
+      <div class="skill-card reveal">
+        <i class="bi bi-code-slash"></i>
+        <h3>Programming</h3>
+        <p>C, C++, Python — embedded systems, data processing, and automation scripting</p>
+      </div>
+      <div class="skill-card reveal">
+        <i class="bi bi-eye"></i>
+        <h3>Computer Vision</h3>
+        <p>Stereo depth estimation, camera calibration, and dimension detection using ZED2i</p>
+      </div>
+      <div class="skill-card reveal">
+        <i class="bi bi-tools"></i>
+        <h3>Electronics &amp; Hardware</h3>
+        <p>Circuit design, load cells, HX711, Arduino, feeler gauges, UV inspection tools</p>
+      </div>
+      <div class="skill-card reveal">
+        <i class="bi bi-diagram-3"></i>
+        <h3>Systems Integration</h3>
+        <p>TCP bridges, ROS 2 middleware, multi-node architectures, hardware-software co-design</p>
+      </div>
+      <div class="skill-card reveal">
+        <i class="bi bi-clipboard-check"></i>
+        <h3>Quality &amp; Operations</h3>
+        <p>QA inspection, SAP inventory management, process improvement, cross-functional collaboration</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- =======================================================
-  * Template Name: Personal - v2.1.0
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-  </head>
+<!-- ======= Experience ======= -->
+<section id="experience">
+  <div class="container">
+    <p class="section-label reveal">Work Experience</p>
+    <div class="timeline">
 
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <!-- <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-5BB8W2X"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript> -->
-    <!-- End Google Tag Manager (noscript) -->
-    <!-- ======= Header ======= -->
-    <header class="main-header fixed-top">
-        <nav class="nav-menu">
+      <div class="timeline-item reveal">
+        <div class="tl-marker"></div>
+        <div class="tl-body">
+          <span class="tl-date">May 2022 – Jul 2024</span>
+          <h3><a href="https://www.kinergycorp.com/" target="_blank">Kinergy Corporation Ltd.</a></h3>
+          <p class="tl-role">Assistant Quality Assurance Engineer</p>
           <ul>
-            <li class="nav-item"><a class="nav-link" href="#header">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-            <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="#skills">Education</a></li>
-            <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+            <li>Conducted detailed equipment inspections using UV light to uphold stringent quality standards</li>
+            <li>Used feeler gauges and other precision tools for measurement and performance checks</li>
+            <li>Collaborated with the QA team to identify process improvement areas and implement strategic changes</li>
           </ul>
-        </nav>
-      </div>
-    </header>
-
-<section id="header" class="home-section">
-      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between border p-3 mt-5">
-        <div class="home-text">
-          <h1 class="fw-bold">JIN ZIYU
-            <a href="https://www.linkedin.com/in/jin-ziyu/" target="_blank"><i class="bx bxl-linkedin"></i></a>
-            <a href="https://github.com/Jin-Ziyu" target="_blank"><i class="bx bxl-github"></i></a>
-          </h1>
-          <h5 class="fw-bold">Robotics Systems Undergraduate Portfolio</h5>
-          <p>Robotics Systems undergraduate at Singapore Institute of Technology with a foundation in electronics, circuit design, and automation technologies. Focused on robotics, smart manufacturing, and system optimization.</p>
-          <p><strong>Assistant Quality Assurance Engineer</strong> at Kinergy Corporation (2022–2024): Equipment inspection, precision measurement, and cross-functional collaboration.</p>
-          <p><strong>Supply Chain Intern</strong> at Wizlogix (2021–2022): Inventory control, SAP workflow management, and operational optimization.</p>
-          <a href="#portfolio" class="btn btn-outline-dark me-2"><i class="bx bx-pencil"></i> Projects</a>
-          <a href="#skills" class="btn btn-outline-dark"><i class="bx bx-cog"></i> Skills</a>
-        </div>
-        <img src="assets/img/profile.jpeg" alt="Profile" class="home-profile-pic-small" />
-      </div>
-      <div class="text-center mt-4">
-        <a href="#about" class="btn btn-outline-secondary">More About Me<br /><i class="bx bx-down-arrow-alt"></i></a>
-      </div>
-</section>
-    
-  </div>
-</header>
-
-        
-    </header>
-    <!-- End Header -->
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <!-- ======= About Me ======= -->
-      <div class="about-me container">
-        <div class="section-title">
-          <h2>About</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img
-              src="assets/img/profile.jpeg"
-              class="img-fluid"
-              alt="Uday Photo"
-            />
-          </div>
-
-          <div
-            class="col-lg-8 pt-4 pt-lg-0 content"
-            data-aos="fade-left"
-            style="font-weight: 500; color: #22223B"
-          >
-            <p>
-              I’m Jin Ziyu, a Robotics Systems undergraduate at the Singapore Institute of Technology with a strong foundation in electronics, automation, and robotics. My journey combines academic learning with practical industry experience in quality assurance and supply chain operations.
-
-During my time as an Assistant Quality Assurance Engineer at Kinergy Corporation, I conducted equipment inspections using UV light and feeler gauges, while collaborating with cross-functional teams to enhance product quality and operational efficiency. My internship at Wizlogix gave me insight into supply chain processes, inventory control, and procurement systems like SAP.
-
-I’m passionate about solving technical challenges, optimizing systems, and applying robotics solutions in real-world environments. With skills in ROS 1, C/C++ programming, and inspection tools, I’m constantly seeking opportunities to innovate in robotics, automation, and quality engineering.
-
-
-            </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End About Me -->
-
-      <!-- ======= Interests ======= -->
-      <div class="interests container">
-        <div class="section-title">
-          <h2>Interests</h2>
-        </div>
-
-        <div class="row">
-          <!-- <div class="col-lg-3 col-md-4">
-            <div class="icon-box">
-              <i class="ri-computer-line" style="color: #ffbb2c"></i>
-              <h3>Pervasive Computing</h3>
-            </div>
-          </div> -->
-          <div class="col-lg-3 col-md-4">
-            <div class="icon-box">
-              <i class="ri-computer-line" style="color: #ffbb2c"></i>
-              <h3>Distributed Computing</h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="icon-box">
-              <i class="ri-cpu-line" style="color: #f1081f"></i>
-              <h3>Text Retrieval and Mining</h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="icon-box">
-              <i class="ri-file-list-3-line" style="color: #47aeff"></i>
-              <h3>Natural Language Processing</h3>
-            </div>
-          </div>
-          <!-- <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box">
-              <i class="ri-smartphone-line" style="color: #5578ff"></i>
-              <h3>Edge/Fog Computing</h3>
-            </div>
-          </div> -->
-          <div class="col-lg-3 col-md-4">
-            <div class="icon-box">
-              <i class="ri-smartphone-line" style="color: #5578ff"></i>
-              <h3>Machine Learning</h3>
-            </div>
-          </div>
-          <!-- <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box">
-              <i class="ri-base-station-line" style="color: #e80368"></i>
-              <h3>Internet of Things</h3>
-            </div>
-          </div> -->
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-computer-line" style="color: #e80368"></i>
-              <h3>Data Analytics</h3>
-            </div>
-          </div>
-          <!-- <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-sensor-line" style="color: #1c7d32"></i>
-              <h3>Data Analysis</h3>
-            </div>
-          </div> -->
-          <!-- <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-remote-control-line" style="color: #28a745"></i>
-              <h3>Cyber Physical Systems</h3>
-            </div>
-          </div> -->
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-cpu-line" style="color: #1c7d32"></i>
-              <h3>Computer Vision</h3>
-            </div>
-          </div>
-          <!-- <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-cpu-line" style="color: #f1081f"></i>
-              <h3>Mobile Computing</h3>
-            </div>
-          </div> -->
-          <!-- <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-file-list-3-line" style="color: #47aeff"></i>
-              <h3>Algorithms</h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-image-line" style="color: #ffc107"></i>
-              <h3>Image Processing</h3>
-            </div>
-          </div> -->
-        </div>
-      </div>
-      <!-- End Interests -->
-    </section>
-    <!-- End About Section -->
-
-    <!-- Start Experience Section -->
-
-    <section id="experience" class="services">
-      <div class="container">
-        <div class="section-title">
-          <h2>Experience</h2>
-        </div>
-        <div class="row">
-          <div class="col-lg-12" data-aos="fade-up">
-            <div
-              class="col-md-12 mt-4 mt-md-0 icon-box"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-                            <h4 style="text-align: left">
-                <a href="https://www.kinergycorp.com/" style="color: #071814">Kinergy Corporation Ltd.</a
-                ><br />
-              </h4>
-              <h5 style="text-align: left">May 2022 – Jul 2024</h5>
-              <p style="text-align: left; color: #172615; font-size: medium">
-                <em>Assistant Quality Assurance Engineer</em>
-              </p>
-              <ul style="text-align: left">
-                <li>
-                  Conducted detailed equipment inspections using UV light to uphold stringent quality standards
-                </li>
-                <li>
-                  Used feeler gauges and other tools for precision measurement and performance checks
-                </li>
-                <li>
-                  Collaborated with the quality assurance team to identify areas for
-process improvement and implement strategic changes.
-                </li>
-              </ul>
-            </div>
-            <div
-              class="col-md-12 mt-4 mt-md-0 icon-box"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <h4 style="text-align: left">
-                <a href="https://www.wizlogix.com/" style="color: #071814"
-                  >Wizlogix Pte Ltd</a
-                ><br />
-              </h4>
-              <h5 style="text-align: left">Oct 2021 - Mar 2022</h5>
-              <p style="text-align: left; color: #172615; font-size: medium">
-                <em>Supply Chain Intern</em>
-              </p>
-              <ul style="text-align: left">
-                <li>
-                  Monitored inventory levels to ensure accuracy and promptly
-addressed discrepancies.
-                </li>
-              </ul>
-            </div> 
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- End Experience Section -->
-
-<!-- Start Project Section -->
-<section id="portfolio" class="portfolio">
-  <div class="container">
-    <div class="section-title">
-      <h2>Projects</h2>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-12 d-flex justify-content-center">
-        <ul id="portfolio-flters">
-          <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-app">Research / Coursework</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row portfolio-container">
-
-      <!-- SEP PROJECT (UNCHANGED) -->
-      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-        <center><h4>System Engineering project</h4><br /></center>
-        <div class="portfolio-wrap">
-          <img
-            src="assets/img/project/sep-limo-arena.jpg"
-            class="img-fluid"
-            alt="SEP Arena"
-            style="height: 250px; width: 100%"
-          />
-          <div class="portfolio-info">
-            <div class="portfolio-links">
-              <a
-                href="projects/sep-limo-arena.html"
-                target="_blank"
-                title="View SEP Project Report"
-              >
-                <i class="bx bx-info-circle"></i>
-              </a>
-            </div>
-          </div>
         </div>
       </div>
 
-      <!-- CEVA PROJECT (NEW - FIXED SAFE VERSION) -->
-      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-        <center><h4>CEVA Project</h4><br /></center>
-
-        <div class="portfolio-wrap">
-          <img
-            src="assets/img/project/ceva-project.jpg"
-            onerror="this.onerror=null;this.src='https://via.placeholder.com/400x250?text=CEVA+Project';"
-            class="img-fluid"
-            alt="CEVA Project"
-            style="height: 250px; width: 100%"
-          />
-
-          <div class="portfolio-info">
-            <div class="portfolio-links">
-              <a
-                href="projects/ceva-project.html"
-                target="_blank"
-                title="View CEVA Project Report"
-              >
-                <i class="bx bx-info-circle"></i>
-              </a>
-            </div>
-          </div>
+      <div class="timeline-item reveal">
+        <div class="tl-marker"></div>
+        <div class="tl-body">
+          <span class="tl-date">Oct 2021 – Mar 2022</span>
+          <h3><a href="https://www.wizlogix.com/" target="_blank">Wizlogix Pte Ltd</a></h3>
+          <p class="tl-role">Supply Chain Intern</p>
+          <ul>
+            <li>Monitored inventory levels to ensure accuracy and promptly addressed discrepancies</li>
+            <li>Managed procurement workflows and purchase orders through the SAP system</li>
+            <li>Supported operational optimisation across the supply chain function</li>
+          </ul>
         </div>
       </div>
 
     </div>
   </div>
 </section>
-<!-- End Project Section -->
 
-    <!-- End Project Section -->
+<!-- ======= Projects ======= -->
+<section id="projects" class="alt-bg">
+  <div class="container">
+    <p class="section-label reveal">Projects</p>
+    <div class="projects-grid">
 
-    <!-- Start Skills Section -->
-
-   
-    <section id="skills" class="services">
-      <div class="container">
-        <div class="section-title">
-          <h2>Education</h2>
-        </div>
-        <div class="row">
-          <div class="col-lg-12" data-aos="fade-up">
-            <div
-              class="col-md-12 mt-4 mt-md-0 icon-box"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-                            <h4 style="text-align: left">
-                <a href="https://www.singaporetech.edu.sg/" style="color: #071814">Singapore Institute of Technolgy.</a
-                ><br />
-              </h4>
-              <h5 style="text-align: left">Sept 2024 - Present</h5>
-              <p style="text-align: left; color: #172615; font-size: medium">
-                <em>BENG (HONS) Robotics Systems</em>
-              </p>
-              <ul style="text-align: left">
-                </li>
-              </ul>
-            </div>
-            <div
-              class="col-md-12 mt-4 mt-md-0 icon-box"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <h4 style="text-align: left">
-                <a href="https://www.tp.edu.sg/" style="color: #071814"
-                  >Temasek Polytechnic</a
-                ><br />
-              </h4>
-              <h5 style="text-align: left">Oct 2022 - Oct 2023</h5>
-              <p style="text-align: left; color: #172615; font-size: medium">
-                <em>Specialist diploma in Robotics and Automation</em>
-              </p>
-              <ul style="text-align: left">
-                <li>
-                  Advanced proficiency in robotics systems and automation
-technologies.
-                </li>
-<li>
-                  Specialized in control systems for robotics applications
-                </li>
-              </ul>
-</div>
-            <div
-              class="col-md-12 mt-4 mt-md-0 icon-box"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <h4 style="text-align: left">
-                <a href="https://www.tp.edu.sg/" style="color: #071814"
-                  >Temasek Polytechnic</a
-                ><br />
-              </h4>
-              <h5 style="text-align: left">Apr 2019 - Apr 2022</h5>
-              <p style="text-align: left; color: #172615; font-size: medium">
-                <em>Diploma in Electronics</em>
-              </p>
-              <ul style="text-align: left">
-                <li>
-                  Acquired extensive knowledge of electronic circuits, systems, and
-components
-                </li>
-              </ul>
-
-            </div> 
+      <!-- CEVA -->
+      <article class="project-card reveal">
+        <div class="project-img">
+          <img src="assets/img/project/ceva-project.jpg" alt="CEVA Intelligent Pallet System" />
+          <div class="project-overlay">
+            <a href="projects/ceva-project.html" target="_blank" class="overlay-btn">View Details <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
-      </div>
-    </section>
+        <div class="project-body">
+          <div class="project-tags"><span>ROS 2</span><span>Computer Vision</span><span>Python</span></div>
+          <h3>CEVA — Intelligent Pallet Optimisation System</h3>
+          <p>An autonomous warehouse measurement system integrating load cell sensing and stereo camera vision to capture weight and 3D dimensions of palletised cargo at a fixed checkpoint.</p>
+          <div class="project-actions">
+            <a href="projects/ceva-project.html" target="_blank" class="action-link">Read More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
 
+      <!-- SEP -->
+      <article class="project-card reveal">
+        <div class="project-img">
+          <img src="assets/img/project/sep-limo-arena.jpg" alt="SEP LIMO Autonomous Navigation" />
+          <div class="project-overlay">
+            <a href="projects/sep-limo-arena.html" target="_blank" class="overlay-btn">View Details <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>ROS 1 Melodic</span><span>C++</span><span>Autonomous Nav</span></div>
+          <h3>SEP — LIMO Autonomous Navigation System</h3>
+          <p>Designed, built, and tested an autonomous navigation system for the LIMO mobile robot using ROS 1 Melodic — covering SLAM, path planning, and real-world obstacle avoidance.</p>
+          <div class="project-actions">
+            <a href="projects/sep-limo-arena.html" target="_blank" class="action-link">Read More <i class="bi bi-arrow-right"></i></a>
+            <a href="https://github.com/Jin-Ziyu/Systems-Engineering-Project-1-Group-6" target="_blank" class="action-link action-gh"><i class="bi bi-github"></i> GitHub</a>
+          </div>
+        </div>
+      </article>
 
+      <!-- SIT Dashboard (wide) -->
+      <article class="project-card project-wide reveal">
+        <div class="project-img">
+          <div class="project-placeholder">
+            <i class="bi bi-layout-text-window-reverse"></i>
+            <span>sit-dashboard</span>
+          </div>
+          <div class="project-overlay">
+            <a href="https://github.com/Jin-Ziyu/sit-dashboard" target="_blank" class="overlay-btn">View on GitHub <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <h3>SIT Student Dashboard</h3>
+          <p>A student-facing web dashboard for Singapore Institute of Technology — featuring timetable integration, drag-and-drop panels, dark mode, and per-student data namespacing. Built as a practical tool for daily campus life.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Jin-Ziyu/sit-dashboard" target="_blank" class="action-link action-gh"><i class="bi bi-github"></i> View on GitHub</a>
+          </div>
+        </div>
+      </article>
 
-    <!-- End Skills Section -->
-<!-- ======= Resume Section ======= -->
-<section id="resume" class="services">
+    </div>
+  </div>
+</section>
+
+<!-- ======= Education ======= -->
+<section id="education">
   <div class="container">
-    <div class="section-title">
-      <h2>Resume</h2>
-    </div>
+    <p class="section-label reveal">Education</p>
+    <div class="timeline">
 
-    <!-- Resume Preview -->
-    <div style="text-align: center;">
-      <iframe
-        src="assets/resume.pdf"
-        width="100%"
-        height="600"
-        style="border: none; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 8px;"
-      ></iframe>
-    </div>
-
-    <!-- Download Button -->
-    <div style="text-align: center; margin-top: 20px;">
-          <a href="assets/resume.pdf" download>
-            <img src="assets/img/pdf-icon.png" alt="Download Resume" style="height: 20px; width: 20px;" />
-          </a>
-Download Resume
+      <div class="timeline-item reveal">
+        <div class="tl-marker"></div>
+        <div class="tl-body">
+          <span class="tl-date">Sep 2024 – Present</span>
+          <h3><a href="https://www.singaporetech.edu.sg/" target="_blank">Singapore Institute of Technology</a></h3>
+          <p class="tl-role">BEng (Hons) Robotics Systems</p>
+          <ul>
+            <li>Focus on robotics systems design, autonomous platforms, and smart manufacturing</li>
+            <li>Coursework covering control theory, embedded systems, and system integration</li>
+          </ul>
         </div>
       </div>
-    </section>
 
-    <!-- End Contact Section -->
+      <div class="timeline-item reveal">
+        <div class="tl-marker"></div>
+        <div class="tl-body">
+          <span class="tl-date">Oct 2022 – Oct 2023</span>
+          <h3><a href="https://www.tp.edu.sg/" target="_blank">Temasek Polytechnic</a></h3>
+          <p class="tl-role">Specialist Diploma in Robotics and Automation</p>
+          <ul>
+            <li>Advanced proficiency in robotics systems and automation technologies</li>
+            <li>Specialised in control systems design for robotics applications</li>
+          </ul>
+        </div>
+      </div>
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/jquery/jquery.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-    <script src="assets/vendor/counterup/counterup.min.js"></script>
-    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/venobox/venobox.min.js"></script>
-    <script src="assets/vendor/typed.js/typed.min.js"></script>
-    <!-- <script type="text/javascript">
-      var typed = new Typed('.typing', {
-        strings: ['Developer', 'Tester', 'IoT Enthusiast'],
-        loop: true,
-        typeSpeed: 65,
-        backSpeed: 65,
-      });
-    </script> -->
-    <!-- <script type="text/javascript">
-      var custom_greet = document.getElementById('#intro-greeting');
-      var header = document.getElementById('#header');
-      if (document.onclick())
-        if (header.classList.contains('header-top')) {
-          console.log('Header-top activated');
-          custom_greet.style.display = 'none';
-        } else {
-          custom_greet.style.display = 'block';
-        }
-    </script> -->
+      <div class="timeline-item reveal">
+        <div class="tl-marker"></div>
+        <div class="tl-body">
+          <span class="tl-date">Apr 2019 – Apr 2022</span>
+          <h3><a href="https://www.tp.edu.sg/" target="_blank">Temasek Polytechnic</a></h3>
+          <p class="tl-role">Diploma in Electronics</p>
+          <ul>
+            <li>Acquired extensive knowledge of electronic circuits, systems, and components</li>
+            <li>Hands-on lab work in PCB design, signal processing, and embedded programming</li>
+          </ul>
+        </div>
+      </div>
 
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-  </body>
+    </div>
+  </div>
+</section>
+
+<!-- ======= Resume ======= -->
+<section id="resume" class="alt-bg">
+  <div class="container" style="text-align:center;">
+    <p class="section-label reveal" style="justify-content:center;">Resume</p>
+    <div class="resume-frame reveal">
+      <iframe src="assets/resume.pdf" title="Jin Ziyu Resume"></iframe>
+    </div>
+    <a href="assets/resume.pdf" download class="btn-solid reveal" style="margin-top:28px;display:inline-flex;align-items:center;gap:8px;">
+      <i class="bi bi-download"></i> Download Resume
+    </a>
+  </div>
+</section>
+
+<!-- ======= Contact ======= -->
+<section id="contact">
+  <div class="container">
+    <p class="section-label reveal">Get In Touch</p>
+    <div class="contact-grid">
+
+      <div class="contact-info reveal">
+        <h2>Let's connect.</h2>
+        <p>I'm open to internship opportunities, research collaborations, or just a conversation about robotics and automation.</p>
+        <div class="contact-socials">
+          <a href="https://www.linkedin.com/in/jin-ziyu/" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/Jin-Ziyu" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+          <a href="mailto:jinziyu@example.com"><i class="bi bi-envelope"></i> Email</a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="cf-name">Name</label>
+          <input type="text" id="cf-name" name="name" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="email" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="cf-subject">Subject</label>
+          <input type="text" id="cf-subject" name="subject" placeholder="What's this about?" />
+        </div>
+        <div class="form-group">
+          <label for="cf-msg">Message</label>
+          <textarea id="cf-msg" name="message" rows="5" placeholder="Tell me more..." required></textarea>
+        </div>
+        <button type="submit" class="btn-solid form-submit">Send Message <i class="bi bi-send"></i></button>
+        <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======= Footer ======= -->
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2025 Jin Ziyu · Robotics Systems, SIT · <a href="https://github.com/Jin-Ziyu" target="_blank">GitHub</a></p>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
 </html>
