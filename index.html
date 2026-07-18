@@ -571,6 +571,7 @@ body.preloading{ overflow:hidden; }
   background:var(--pl-bg);
   display:flex;flex-direction:column;align-items:center;justify-content:center;
   gap:40px;
+  padding:0 20px;
   transition:transform 1s var(--pl-ease);
   font-family:var(--font-mono);
   overflow:hidden;
@@ -626,7 +627,7 @@ body.preloading{ overflow:hidden; }
 }
 .pl-hex-hub{ fill:var(--pl-accent);opacity:0; animation:plHubIn .35s ease forwards .95s, plPulseDot 2.2s ease-in-out infinite 1.3s; }
 @keyframes plHubIn{to{opacity:1}}
-.pl-sig-row{display:flex;align-items:center;gap:16px}
+.pl-sig-row{display:flex;align-items:center;gap:14px;max-width:100%}
 .pl-mark{
   width:16px;height:16px;flex-shrink:0;
   opacity:0;
@@ -639,9 +640,10 @@ body.preloading{ overflow:hidden; }
 .pl-sig-wrap{position:relative}
 .pl-sig{
   font-family:'Caveat',cursive;font-weight:700;
-  font-size:clamp(2.6rem,6.5vw,4.2rem);
+  font-size:clamp(1.7rem, 4vw + 1.1rem, 4.2rem);
   color:var(--pl-fg);line-height:1;
   transform:rotate(-1.5deg);
+  white-space:nowrap;
 }
 .pl-letter{display:inline-block;opacity:0;transform-origin:center center}
 @keyframes plLetterFlipIn{
@@ -675,6 +677,10 @@ body.preloading{ overflow:hidden; }
 @media (max-width:520px){
   .pl-stage{width:80vw;max-width:280px}
   .pl-index{top:24px;left:24px}
+}
+@media (max-width:400px){
+  .pl-sig-row{gap:9px}
+  .pl-mark{width:12px;height:12px}
 }
 </style>
 </head>
