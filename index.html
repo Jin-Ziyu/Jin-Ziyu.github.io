@@ -637,13 +637,14 @@ body.preloading{ overflow:hidden; }
 .pl-mark svg{width:100%;height:100%}
 @keyframes plBracketIn{0%{opacity:0;transform:translateX(6px)}100%{opacity:1;transform:translateX(0)}}
 @keyframes plBracketInR{0%{opacity:0;transform:translateX(-6px)}100%{opacity:1;transform:translateX(0)}}
-.pl-sig-wrap{position:relative}
+.pl-sig-wrap{position:relative;min-width:0}
 .pl-sig{
   font-family:'Caveat',cursive;font-weight:700;
   font-size:clamp(1.7rem, 4vw + 1.1rem, 4.2rem);
   color:var(--pl-fg);line-height:1;
   transform:rotate(-1.5deg);
   white-space:nowrap;
+  min-width:0;
 }
 .pl-letter{display:inline-block;opacity:0;transform-origin:center center}
 @keyframes plLetterFlipIn{
@@ -677,10 +678,15 @@ body.preloading{ overflow:hidden; }
 @media (max-width:520px){
   .pl-stage{width:80vw;max-width:280px}
   .pl-index{top:24px;left:24px}
+  /* FIX: pure vw sizing so the signature scales down with the viewport
+     instead of overflowing under the fixed +1.1rem floor in the clamp() above */
+  .pl-sig{font-size:11vw}
+  .pl-sig-row{max-width:88vw}
 }
 @media (max-width:400px){
   .pl-sig-row{gap:9px}
   .pl-mark{width:12px;height:12px}
+  .pl-sig{font-size:10vw}
 }
 </style>
 </head>
